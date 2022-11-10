@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rayan test 1</title>
+</head>
+<body>
+	<h1>Rayan test 1</h1>
+	<button id="btn" onclick="afficheDesNombres()">Appuyer ici</button>
+	<br><br>
+	<div id="contenu"></div>
+	<script type="text/javascript">
+		
+		function afficheDesNombres(){
+
+			let nb = "";
+			let contenu_display = ""
+		
+			for (var i = 1; i < 10; i++) {
+				nb = nb + i
+				contenu_display = contenu_display + nb + "<br>"
+
+			}
+
+			document.getElementById("contenu").innerHTML = contenu_display;
+
+		}
+		
+	</script>
+</body>
+</html>
